@@ -1,0 +1,135 @@
+/* Set the default font and padding/margin for the page */
+font-face {
+    font-family: "Avenir-Medium";
+    src: url("fonts/Avenir.ttc") format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Avenir-Medium";
+}
+
+/* Main body */
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page Main Heading */
+h1{
+    text-align: center;
+    margin: 5%;
+}
+
+/* Modal button - main */
+.modal-btn{
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+}
+
+/* Modal button - submission */
+.modal-submit-btn{
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 2.5% 0;
+    border: none;
+    border-radius: 2px;
+
+}
+
+.modal-cta-headline{
+    width: 95%;
+}
+
+/* Modal CTA headline */
+.modal-cta-headline>h2{
+    color: white;
+    text-align: center;
+}
+
+
+/* Modal Content Main Wrapper */
+.modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    width: 95%;
+    height: 95vh;
+    margin: auto;
+    padding: 1%;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+}
+
+/* Modal exit button wrapper*/
+.exit-btn-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding: 2% 0%;
+    justify-content: flex-end;
+}
+
+/* Modal exit button icon*/
+.exit-btn>i{
+    color: white;
+    font-size: 2rem;
+    padding: 2% 0%;
+}
+
+/* Modal form wrapper */
+.modal-form-wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal contact info form */
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2.5% 0;
+}
+
+/* Modal contact form info inputs */
+.modal-form>input{
+    padding: 2.5%;
+    margin: 2% 0;
+    font-size: 1rem;
+}
+
+/* CSS Media Queries */
+@media only screen and (max-height: 430px){
+    .modal-wrapper{
+        height: 175vh;
+    }
+}
