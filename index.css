@@ -56,6 +56,7 @@ h1{
 
 }
 
+/* Modal CTA headline wrapper */
 .modal-cta-headline{
     width: 95%;
 }
@@ -67,10 +68,9 @@ h1{
     font-size: 1.5rem;
 }
 
-
 /* Modal Content Main Wrapper */
 .modal-wrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -82,7 +82,6 @@ h1{
     z-index: 1;
     position: absolute;
     top: 10px;
-    /* bottom: 0; */
     left: 0;
     right: 0;
 }
@@ -132,5 +131,11 @@ h1{
 @media only screen and (max-height: 430px){
     .modal-wrapper{
         height: 175vh;
+    }
+}
+
+@media only screen and (min-width: 769px) and (min-height: 769px){
+    .modal-btn{
+        display: none;
     }
 }
